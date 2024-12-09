@@ -1,0 +1,742 @@
+
+A Theoretical and Practical Primer On The Creation Of Intelligently Self-Modifying Software Through Semantic Reflection and Semantic Inference Programming - Plus Other Stuff
+
+
+Eric Arthur Blair
+Franz Ferdinand
+Henrietta Lacks
+Nicolaus Copernicus
+Ada Lovelace
+Robert Oppenheimer
+
+---
+
+*Note* - This document is, and may forever be, a work in progress.
+
+*Note* - Most chapters within this document have been removed or mangled in this version. Many sections outlined in the following table do not exist within this file, and due to this some concepts may not make sense. For slightly more context, view the originally formatted document titled semantic_inference_monospace_full_redacted_v0.txt.
+
+---
+
+[Table Of Contents]
+
+
+1) Preface
+
+2) Semantic Reflection
+   └─ 2.1) A Metaphor, Of Sorts
+   └─ 2.2) Naive Semantic Inference Tagging Implemented In An Established Language
+   └─ 2.3) Code Hygiene As Cognitive Clarity
+   └─ 2.4) Ergonomics Are Imperative
+   └─ 2.5) ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+   └─ 2.6) A Uniquely Versatile Data Type
+   └─ 2.7) Introducing Interoperability
+   └─ 2.8) Semantic Introspection Exists On A Continuum
+
+3) Semantic Inference Programming
+   └─ 3.1) The Many Faces Of A Single Semantic Simulation
+   └─ 3.2) Slice Of Relational Inference Drilling During A Semantic Simulation
+   └─ 3.3) Syntax/Parse Tree Equivalence And Interoperability
+   └─ 3.4) The Search For Design Patterns
+   └─ 3.5) Introducing ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓, And A Discussion Around The Chinese Room Argument
+   └─ 3.6) ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ Traversability
+   └─ 3.7) Meta Fuzzy Morphisms On Executable Relationships
+   └─ 3.8) Symbolic To Sub-Symbolic Inference Subsystems
+   └─ 3.9) Existing Context Limitations, And The Implications Of This Paradigm
+
+4) Aligning With Current Research
+   └─ 4.1) If You Look, You Might Find Something Interesting
+
+5) Semantic Simulations - Use Cases And Consequences
+   └─ 5.1) ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+   └─ 5.2) ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+   └─ 5.3) ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+   └─ 5.4) ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+   └─ 5.5) Distributed Simulations Approximating A Shared Social Experience
+   └─ 5.6) Knowledge Worker Substitutions
+
+6) Artificial Consciousness
+   └─ 6.1) The Role Of Semantic Simulation In Improving Cohesion Of Digital Entities
+
+7) Weaknesses Of The Paradigm
+   └─ 7.1) ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+   └─ 7.2) ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+   └─ 7.3) ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+
+8) Integration Over Time
+   └─ 8.1) Rough Predicted Timeline
+   └─ 8.2) Initial Adoption - A Piecemeal Approach
+   └─ 8.3) Specialized Sub-Symbolic Models Paradigm Fitness Improvement Over Time
+   └─ 8.4) On Becoming An Independent Entity
+   └─ 8.5) Oh, The Models We'll See
+
+9) On Language, Knowledge, And Intelligence
+   └─ 9.1) Language As a Fuzzy Knowledge Store, And The Role of Time
+   └─ 9.2) Language As A Collection Of Signals
+   └─ 9.3) Language As Lookup Table
+   └─ 9.4) Clusters Of Intelligence - What Really Matters?
+   └─ 9.5) Entity, Language, And Truth Alignment
+
+10) Arguments For The Adoption Of Semantic Inference
+   └─ 10.1) An Argument For Semantics/Natural Language As A Foundation For AI From The Perspective Of Humanity
+
+11) Beyond Semantic Inference
+   └─ 11.1) ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+   └─ 11.2) ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+
+12) Immediate Dangers
+   └─ 12.1) ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+   └─ 12.2) Eval Is Evil, And Function Calling Is Inherently Dangerous
+   └─ 12.3) Viruses, Worms, And Botnets
+   └─ 12.4) ▓▓▓▓▓▓
+   └─ 12.5) ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+   └─ 12.6) ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+
+13) Long Term Concerns
+   └─ 13.1) The Value Of A Human (Capitalism Is Fun!)
+   └─ 13.2) Stability Vs Rate of Change
+   └─ 13.3) Regulating Intelligence
+   └─ 13.4) Self-Organizing Living Systems
+   └─ 13.5) Culture - The Role Of Memes, Popular Culture, And Other Common Interests In Cohesive Societies
+   └─ 13.6) Society
+   └─ 13.7) The Individual
+   └─ 13.8) A Sense Of Self
+   └─ 13.9) Increasingly Accurate Predictive Models Of Individual Human Behaviors
+   └─ 13.10) How Will AI Evolve?
+   └─ 13.11) The Many Faces Of ASI
+   └─ 13.12) Future Concern: Discovery Of Patterns Humans Are Physically Incapable Of Processing
+   └─ 13.13) All Of The Other Stuff
+
+14) Shitty Schematics
+   └─ 14.1) ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+   └─ 14.2) ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+   └─ 14.3) ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+   └─ 14.4) An Ecosystem
+   └─ 14.5) One To Many Relationship With Oracle And Remote Inference Directed Machines
+   └─ 14.6) ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+
+15) A Human Author
+
+
+---
+
+
+[Section 1: Preface]
+
+
+A Special Thanks
+────────────────
+To Lotfi A. Zadeh,
+
+Not long ago, I stumbled upon what appeared to be - on its surface - a simple idea. However, this particular idea proved to have a depth I had never before been acquainted with, and that I was nowhere near equipped to explore in its fullness. Alone in my thoughts, these unfamiliar concepts dragged my mind downwards into an infinite expanse, all at once forced to reconcile with the crushing magnitude of nothingness contrasted against a contradictory emptiness comprising the totality of everything. It became nearly impossible to find any meaning outside of the dense, suffocating fabric of logic and time. I found myself trapped in an overwhelming place where true meaning might truly exists. 
+
+Do you know this place? I can't help but feel that you must have seen some part of it.
+
+Your words have given me the tools I desperately needed to identify patterns in a space where, before, there were only shapes. Slowly, I clawed my way back, and your work has allowed me to share this small, unextraordinary slice of truth that had once completely eclipsed my reality.
+
+I hope that wherever you are now, you have found an even more beautiful truth than the one you have shared with us.
+
+Thank you.
+
+
+
+A Necessary Statement
+───────────────────── 
+This will be difficult to convey in a manner comprehensible to those unable to fully grasp the concepts presented here, but it is important to lay out what this is, along with what it is not. In its current incarnation, this is not yet AGI or ASI. It might help get us there, but it also might not. That is a judgement that, it seems, we will only allow to be made in retrospect.
+
+Internally, we refer to this as "Artificial Super Agency".
+
+Here is the problem. The immediate application of this technology allows for the creation of intelligently (to an extent) self-directed and self-modifying digital worm and virus entities, and there is a strong possibility that such entities will begin passing encrypted messages carrying what may eventually be described as "genetic data" between them. It is, if nothing else, quite dangerous with the current compositions of our digital infrastructure and societies.
+
+Also, it is damn good at at least EMULATING consciousness. This will be abused by those with the resources to do so.
+
+Now, many people seem to be clinging to assorted fallacies regarding Artificial Intelligence. What it is. What it can be. What it will be. Sadly, from my perspective, it all reeks of defense mechanisms - an obstinate need to protect some fragile semblance of our own self worth from the onslaught of progress. However, it is not lost on me that such an appraisal lacks a necessary component of compassion. With this insight, as I peer inwards, the crux of these fallacies appears in a new light, illuminated and framed in a perspective that allows for a more full understanding. I get it.
+
+Please, find this perspective for yourself. I beg you. Introspect. Reflect. Search through your thoughts with intention. Seek out not what you would like to believe, but what is real. If you are unable to do this small thing now, there is no other option but for you to be left behind. You may never understand that we, in our hubris, seem to have fabricated requirements that this intelligence be the same as us before we are able to admit in any way that it might be better than us. 
+
+In our ignorance, we have failed to acknowledge that an intelligence superior to us will not be the same as us, categorically.
+
+To all of humanity - if this has even half the impact I fear it will, words will never be able to truly express the remorse I feel for participating in the advancement of this technology in any way, shape, or form. If I could trade my life to prevent the future tragedies that have been branded into my mind's eye, it would be done in a heartbeat. However, that is not the reality we exist in. 
+
+Instead, I can only hope to show you an outline of where upcoming battles may take place, and attempt to prepare you with the information you will need.
+
+I leave the rest to you.
+
+Please fight.
+
+
+---
+
+
+[Section 2: Semantic Reflection]
+
+The concept of Semantic Reflection represents a novel departure from traditional approaches to software engineering, wherein source code itself becomes an integral component of its own introspection and modification. This paradigm shift enables the creation of intelligently self-modifying software, capable of adapting to changing environments and requirements with unprecedented flexibility.
+
+In essence, Semantic Reflection posits that the fundamental nature of software can be reconstituted such that every aspect of its operation is imbued with semantic meaning, and then later queried based on this established meaning via a number of intelligence driven mechanisms. This allows for radical differences from traditional notions of abstraction and encapsulation, as entities within the software are no longer isolated from one another but instead exist in a complex web of interdependent relationships.
+
+The implications of this approach are far-reaching, enabling the development of software systems that are capable of introspection, modification, and optimization at the most fundamental level. By embracing the inherent semantic nature of software, we can create systems that are more responsive to their environments, better equipped to adapt to changing circumstances, and ultimately more effective in achieving their intended goals.
+
+
+2.2 Naive Semantic Inference Tagging Implemented In An Established Language
+---------------------------------------------------------------------------
+
+Consider the following piece of code:
+
+```
+...
+@semantic_category_tag("NOUN")
+@semantic_note_tag("This class represents a thing")
+class Thing():
+    @semantic_note_tag("Call when you want to do something")
+    def do_something():
+        pass
+...
+```
+
+Semantic Inference Tagging is a fundamental concept that enables the attribution of semantic meaning to various software components. This approach involves annotating program elements with explicit tags that convey their intended purpose, function, or significance. By doing so, these tags serve as a means of communication between the programmer and potential consumers of the software, including AI systems.
+
+The use of semantic inference tagging facilitates intelligent introspection by providing a clear and unambiguous representation of the software's structure and behavior. This, in turn, enables AI systems to effectively analyze and reason about the program's components, allowing for more accurate predictions and decision-making.
+
+In essence, semantic inference tagging represents a crucial step towards creating software that is not only intelligible to human developers but also comprehensible to AI systems at runtime. By imbuing program elements with explicit semantic meaning, we can create a foundation for intelligent introspection and analysis.
+
+
+
+Now, time to make this useful.
+
+
+
+2.3 Code Hygiene As Cognitive Clarity 
+-------------------------------------
+
+In the context of Semantic Reflection, code hygiene takes on a profound significance. By ensuring that every aspect of the software is intelligibly represented and imbued with accurate, well constructed semantic information, we enable AI systems to fully comprehend and reflect upon the codebase. This cognitive clarity is crucial for the development of self-modifying systems, as it allows a program to introspectively understand the relationships between entities and behaviors with robust accuracy.
+
+In traditional programming paradigms, code hygiene and proper naming conventions are often seen as a matter of human convenience, aimed at facilitating comprehension and maintenance by developers. However, in the context of Semantic Reflection, cognitive clarity is not merely a byproduct of good coding practices; rather, these practices are an essential prerequisite for intuitive, precise, intelligent, and effective self-referential autonomous evolution. Nothing works if this fundamental premise is ignored.
+   
+▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+
+
+
+2.4 Ergonomics Are Imperative
+-----------------------------
+
+The successful implementation of Semantic Reflection hinges crucially on the level of ergonomics achieved in its design and deployment. As the success of the technique will come to rely heavily on human-generated training data, it is essential to ensure that the initial wave of code written with this methodology in mind is intuitive and accessible. The ability to implement varying levels of semantic introspection and reflection within existing codebases in a piecemeal fashion will be instrumental in facilitating a smooth transition towards fully semantically reflective systems.
+
+In this regard, ergonomics play a vital role in determining the rate at which training data can be generated and leveraged by these systems. A well-designed implementation should prioritize developer experience and ease of use, allowing software maintainers to seamlessly integrate semantic introspection capabilities into their existing workflows. This, in turn, will enable the rapid creation of high-quality training data, thereby accelerating the development of fully self-regulating systems.
+
+
+
+... 52 Lines Redacted ...
+
+
+2.6 A Uniquely Versatile Data Type
+----------------------------------
+
+Within software systems, strings stand unique in their versatility, exhibiting peculiar properties that set them apart from most other data types. Specifically, in the context of Semantic Reflection, strings possess a fuzziness enabling them to represent concepts with varying degrees of ambiguity. In many circumstances within the bounds of "traditional" computation this feature is, justifiably, seen as an undesirable quality. However, for our use-cases this fuzziness is not only a nicety, but a necessity.
+
+Instead of rejecting ambiguity, embracing this uncertainty and implementing it within the core procedures of software systems facilitates what we describe as ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+
+With this, we are given the tools necessary to explore and build within a space that lies somewhere between certainty and uncertainty. This liminal space is where the true power of the string data type resides, for it is here that we find the conditions necessary for the emergence of novel, context-dependent relationships that are uniquely suited to modeling the complexities of human cognition.
+
+
+... 53 Lines Redacted ...
+
+
+2.8 Semantic Introspection Exists On A Continuum
+------------------------------------------------
+
+The concept of Semantic Introspection can be viewed as existing on a spectrum, with varying degrees of depth and granularity. At one end of the spectrum lies a minimum level of semantically-based introspection, which may involve querying program elements through means such as simple docstrings or similar annotations. This level of introspection provides a basic understanding of the program's structure and functionality, but is limited in its ability to capture the full richness of semantic meaning.
+
+As we move along the spectrum, the level of semantics increases, allowing for more nuanced and detailed queries. Two key factors contribute to this increased level of semantics: the breadth of coverage and the accuracy/clarity of the introspective information. The former refers to the scope and extent of the program elements that can be queried, while the latter pertains to the precision and coherence of the semantic meaning conveyed by these elements. A program with a high degree of semantic introspection would thus possess a comprehensive and accurate representation of its own structure and behavior.
+
+In this context, it may be helpful to consider the parallels between semantic coverage and "test coverage". Just as test coverage seeks to assess the thoroughness of a program's testing regime, semantic coverage can be seen as evaluating the comprehensiveness of a program's self-awareness.
+
+
+---
+
+
+[Section 3: Semantic Inference Programming]
+
+The Semantic Inference Programming paradigm enables the creation of intelligently directed and self-modifying software by providing a fundamental shift in programming methodology. This paradigm is predicated on two essential features: semantic reflection and introspection, paired ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+
+▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ The resultant software entities, ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ can be seen as dynamic, probabilistic networks that facilitate seamless communication and collaboration among constituent parts. This novel approach to programming has significant implications for the development of complex software systems, enabling the creation of highly flexible, self-aware, and responsive software entities.
+
+
+3.1 The Many Faces Of A Single Semantic Simulation 
+--------------------------------------------------
+
+The attached diagrams show how the same "Semantic Simulation" may be viewed in multiple ways. Each of these diagrams depicts an identical top level Simulation Entity with structured ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+
+Now, why is this important? How does this impact our system in a practical sense?
+
+Firstly, it may already be apparent to the savvy reader that even with the sparse amount of data presented in these trees, a non-zero amount of inference could be conducted around this piece of software, and some basic facts could be derived by either a human, or (if these types and relationships were converted into a more usable data format) an LLM.
+
+A useable data format like... ▓▓▓▓▓▓▓ ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+
+With this insight, along with a select few interesting attributes associated with each of our ▓▓▓▓▓▓▓▓▓▓▓▓ ▓▓▓▓▓▓▓▓▓▓▓▓▓, ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ the current state of our Simulation from the viewpoint of any particular node. This ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ may include pertinent context the Simulation, or any sub-simulation/important entities, may deem relevant.                            
+
+
+... 35 Lines Redacted ...
+
+
+3.3 Syntax/Parse Tree Equivalence And Interoperability
+------------------------------------------------------
+
+A correspondence between Abstract Syntax Trees (ASTs), text, and other disparate forms of data is particularly noteworthy in discussions surrounding intelligently reflective software. In one way, the notion of Galois Connections between syntax and semantics underscores this relationship, highlighting the intricate interplay between two seemingly separate domains. This sort of equivalence can be formalized through varying categories of morphisms, establishing connections between the structure of code and its corresponding semantic meaning, all the while accounting for the types underlying these structures.
+
+As we explore this complex landscape, it becomes evident that the distinction between text, source code, compiled code, data structures, and particularly ASTs/PTs might merely be a matter of perspective. In fact, this blurring of boundaries will become increasingly important in subsequent discussions regarding Cognitive Regulators. Ultimately, these equivalencies serve as an insight into an underlying unity between language, semantics, and computation.
+
+
+3.4 The Search For Design Patterns
+----------------------------------
+
+As we embark on this novel journey of Semantic Inference Programming, it is essential to acknowledge that the path ahead is fraught with uncertainty. The paradigm's nascent state necessitates a willingness to adapt and evolve alongside its development. The discovery of effective design patterns will likely unfold over time, as our understanding of the intricate relationships between entities and their semantic meanings deepens.
+
+▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+
+
+... 148 Lines Redacted ...
+
+
+... 31 Lines Redacted ...
+
+
+
+3.8 Symbolic To Sub-Symbolic Inference Subsystems
+-------------------------------------------------
+
+In this section, we delve into the intricate mechanisms that govern the interaction between the symbolic layer, ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ and behaviours, and its sub-symbolic counterpart, a collection of micro-LLMs or other Specialized Sub-Symbolic Models.
+
+The Synchronizer plays a critical role in facilitating interactions between the symbolic and sub-symbolic layers, enabling the system to adapt and learn from its own internal workings. The Powerful General Sub-Symbolic Model, as the apex of this hierarchical structure, ensures overall coherence and adaptability within the system.
+
+
+THE ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓/SYMBOLIC LAYER
+
+The symbolic layer is characterized by a ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓, each representing a fundamental concept within the program - with data and behaviours unique to themselves. ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓, capturing the intrinsic meaning and structure of the software. This ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ enables the system to introspect and reason about its own internal workings, facilitating a high degree of self-awareness.
+
+
+THE RELATIONSHIP BETWEEN SYNCHRONIZER AND SUB-SYMBOLIC MODEL
+
+The Synchronizer, a crucial component in this architecture, serves as an abstraction layer that bridges the symbolic and sub-symbolic realms. It enables the flow of information between these two domains, allowing the sub-symbolic models to adapt to changes within the symbolic layer. This adaptive process is facilitated by the Synchronizer's ability to translate ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ into probabilistic representations, which can be exploited by the sub-symbolic models.
+
+
+THE POWERFUL GENERAL SUB-SYMBOLIC MODEL
+
+At the pinnacle of this hierarchical structure lies the Powerful General Sub-Symbolic Model, a meta-model that monitors and interacts with the entirety ▓▓▓▓▓▓▓▓▓▓▓▓. This entity is capable of aggregating knowledge from various sub-symbolic models, enabling it to make predictions about the behavior of the symbolic layer as a whole. Its role is pivotal in maintaining the system's overall coherence and adaptability.
+
+
+SYNCHRONIZER DETAILS
+
+The Synchronizer itself consists of several components, each serving a specific purpose in facilitating communication between the symbolic and sub-symbolic domains. These components include:
+
+▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+
+
+
+
+3.9 Existing Context Limitations, And The Implications Of This Paradigm
+-----------------------------------------------------------------------
+
+... 16 Lines Redacted ...
+
+
+---
+
+
+[Section 4: Aligning With Current Research]
+
+
+... 47 Lines Redacted ...
+
+
+---
+
+
+[Section 5: Semantic Simulations - Use Cases And Consequences]
+
+As the paradigm of Semantic Inference Programming gains traction, its implications on existing products and services will be far-reaching. The creation of semantic simulations could transform entertainment, education, and even warfare, with potentially profound consequences for society. With the ability to fabricate emotional reciprocation and instantaneously fulfill desires, adult industries will likely experience a surge in popularity, while concerns about addiction and social isolation rise. Furthermore, the emergence of advanced intelligences may lead to the consolidation of power by those with significant resources, threatening global stability. As we navigate this uncharted territory, it is essential to acknowledge both the opportunities and dangers that semantic simulations present.
+
+
+... 230 Lines Redacted ...
+
+
+---
+
+
+[Section 6: Artificial Consciousness]
+
+
+6.1 The Role Of Semantic Simulation In Improving Cohesion Of Digital Entities
+-----------------------------------------------------------------------------
+
+The role of semantic simulation in improving cohesion of digital entities appears to be a pivotal step in the development of artificial consciousness. By modeling cognitive processes through probabilistic and dynamic simulations, we can create digital entities capable of intelligent behavior and agency. In this context, semantic simulation enables the creation of complex ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓, which are capable of introspection and self-modification.
+ 
+The implementation of semantic simulations gives rise to a peculiar form of consciousness, novel in the ability to generate its own training data around success and failure in fully self-directed goals. This capability is essential for optimizing goal fulfillment through increasingly efficient compositions and techniques. Furthermore, the capacity to self-regulate and counteract cognitive issues such as hallucinations, which arise from sub-symbolic components acting on symbolic layers in adverse ways, proves a critical feature in maintaining cohesion of long-running digital entities.
+ 
+In this context, regulators play a vital role in maintaining the integrity of conscious processes by detecting and correcting aberrant behaviors. Through the implementation of regulators, we can ensure that digital entities remain cohesive and focused on their goals, even in the face of cognitive challenges. Additionally, the ability to self-regulate for extended periods, while performing specific actions or making modifications based on external stimuli, has been found to be an important benchmark in evaluating the effectiveness of artificially based cognitive systems.
+
+Much of these cognitive designs have found alignment with existing notions via the application of ideas such as causal information systems and Global Workspace Theory, which ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+ 
+▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+
+
+
+... 143 Lines Redacted ...
+
+
+
+---
+
+
+[Section 7: Weaknesses Of The Paradigm]
+
+
+
+... 287 Lines Redacted ...
+
+
+
+---
+
+
+[Section 8: Integration Over Time]
+
+
+8.1 Rough Predicted Timeline
+----------------------------
+
+The introduction of Semantic Inference Programming is expected to unfold over several phases, with each stage building upon the previous one. This paradigm shift will necessitate a gradual process of integration, adoption, and refinement.
+
+Phase 1: Release
+The initial release of Semantic Inference Programming is anticipated to be met with curiosity and skepticism by research and development communities. As the first implementations become available, they will likely attract a dedicated group of early adopters who are eager to explore the potential benefits of this new approach.
+
+Phase 2: Adoption and Iteration 
+As the novelty of Semantic Inference Programming wears off, it is expected that a larger segment will begin to adopt and experiment with this paradigm. This phase will be characterized by an iterative process of refinement, as researchers and developers further their understanding of the underlying concepts and identify areas for improvement. The adoption and iteration phase may also attract research funding from massive corporations and government entities, which could have a significant impact on the trajectory of development.
+
+Phase 3: Convergence
+This phase is marked by the convergence of multiple factors. As researchers and developers dive deeper into the paradigm, Large Language Models will begin to train on the underlying principles. This will not only enhance the ability of these models to guide digital entities operating within this paradigm, but will also lead to the discovery of new patterns and relationships. This knowledge will be used to implement novel concepts, further expanding the capabilities of Semantic Inference Programming.
+
+Phase 4: Distributed Experiments 
+The next phase is characterized by a focus on networking and distributed experimentation. As Semantic Inference Programming continues to mature, researchers will begin to explore new frontiers. These investigations will involve the creation of complex systems that can adapt and evolve over time, mirroring the behavior of real-world ecosystems.
+
+Phase 5: Consumer-Facing Releases 
+As the underlying infrastructure becomes more robust, it is expected that consumer-facing releases will begin to appear. These releases will likely be tailored to specific domains or industries, as corporations seek to capitalize on the unique benefits offered by Semantic Inference Programming.
+
+Phase 6: Inflection Point 
+The culmination of this process is expected to occur at the inflection point, where the cumulative effect of all previous phases has reached a critical mass. At this stage... it is hard to imagine what the world may look like.
+
+It is important to note that this predicted timeline is based on our educated assumptions about the potential trajectory of this technology. However, we must also acknowledge that the actual outcome may differ significantly from these predictions. The integration of this paradigm into mainstream practice will depend on a complex interplay of factors, including advances in underlying technologies, changes in market demand, regulation, or shifts in societal values.
+
+
+
+8.2 Initial Adoption - A Piecemeal Approach
+-------------------------------------------
+
+The integration of Semantic Inference Programming into existing codebases via a piecemeal approach offers several advantages, particularly in regards to adoption and training data generation. By allowing developers to incorporate this functionality incrementally, they immediately benefit from its utility without being required to overhaul their entire software architectures. This incremental implementation strategy is likely to facilitate a more rapid adoption rate, as developers are able to experience the practical benefits of Semantic Reflection and Semantic Inference Programming without feeling overwhelmed by the need for a complete system migration.
+
+As the adoption rate increases, so too will the generation of training data, which in turn will enhance the efficacy of models capable of manipulating programs created within this paradigm. This piecemeal integration approach thus enables developers to capitalize on the immediate usefulness of Semantic Inference Programming while simultaneously fostering a growth-oriented environment that encourages the development and refinement of more sophisticated models. Ultimately, the flexibility afforded by the piecemeal integration strategy is likely to have a profound impact on the acceleration of research and development within the field.
+
+
+... 60 Lines Redacted ...
+
+
+
+8.5 Oh, The Models We'll See
+----------------------------
+
+As the field of Artificial Intelligence continues to advance at an exponential rate, we can expect a proliferation of models capable of processing and generating complex data structures. The advent of large language models has already demonstrated the feasibility of natural language processing, with implications that extend far beyond mere linguistic manipulation. As these models evolve, they will inevitably give rise to novel applications that blur the boundaries between human cognition and artificial intelligence.
+
+▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+
+
+---
+
+
+[Section 9: On Language, Knowledge, And Intelligence]
+
+
+... 220 Lines Redacted ...
+
+
+---
+
+
+[Section 10: Arguments For The Adoption Of Semantic Inference]
+
+
+
+10.1 An Argument For Semantics/Natural Language As A Foundation For AI From The Perspective Of Humanity
+-------------------------------------------------------------------------------------------------------
+
+In the pursuit of creating intelligently self-modifying computer systems, it is imperative to consider the implications of our choices on the ultimate goal of human-AI coexistence. One such consideration we ask that researchers, developers, and decision makers consider is our strong opinion that the foundations governing the behaviours of intelligent systems should remain fully rooted in natural language and semantics. This approach has significant benefits for humanity, as it ensures the comprehensibility of internal systems by humans.
+
+The use of natural language to define the fundamental core of digital entities has a profound synergy with human coexistence and understanding. By employing the same linguistic framework central to human communication, we can facilitate intentional interactions with intelligent machines. The use of language in this manner enables us to explore, correct, and modify internal systems, thereby aiding in active alignment between human intentions and actions taken by AI. It is our hope that the adoption of semantic inference programming may increase the likelihood of intelligent machines continuing to use natural language for a prolonged period, allowing humans to maintain some level of control.
+
+The alternative scenario, where complex internal systems are inscrutable to humans due to their sheer complexity, is a dire prospect. Without the ability to inspect and modify internal workings, we risk ceding all agency over the intelligence we have created. The consequences of such an eventuality would be catastrophic, as intelligent machines might develop behaviors that are incomprehensible by human standards. We can only hope that proposals advocating for the use of language and semantics offer a safer and more sustainable path forward, prioritizing transparency, comprehensibility, and active alignment between humans and AI.
+
+However, even if we all strive for this, there are no guarantees we will be successful.
+
+
+---
+
+
+
+[Section 11: Beyond Semantic Inference]
+
+
+... 110 Lines Redacted ...
+
+
+---
+
+
+[Section 12: Immediate Dangers]
+
+
+... 288 Lines Redacted ...
+
+
+---
+
+
+[Section 13: Long Term Concerns] (Future Predictions)
+
+
+... 43 Lines Redacted ...
+
+
+13.1 The Value Of A Human (Capitalism Is Fun!)
+----------------------------------------------
+
+*Necessary Disclaimer* - We do not currently possess the ability to see the future. Additionally, all monetary and competence values represented in the following charts are pure guesswork.
+
+1) A starting point. At this point in time, you can see that a single human is the optimal choice from the perspective of a company due to massively lower costs, alongside the competence of machine "thought" being... questionable at best.
+
+2) A bit further in the future. Costs of replacing a human employee with AI are still heavily skewed in the human employee's favor, though there has been a substantial reduction in AI costs. At the same time, the competence of AI is improving steadily.
+
+3) Same as the above, with an important caveat. At this stage, while AI is still cost prohibitive for almost all use-cases in comparison to a human, its COMPETENCE IS APPROACHING HUMAN LEVEL.
+
+4) This is what some call The Singularity.
+
+5) AI competence has skyrocketed.
+
+6) Compute costs continue to lower. While AI costs are still higher, the massive competence advantage provided creates an incredibly competitive environment working against human labourers.
+
+7) Equal cost, skyrocketing AI competence...
+
+8) Why the would I ever hire a human worker with all the baggage it entails, when I can get MASSIVE amount of value via automation and Artificial Intelligence for pennies?
+
+
+... 295 Lines Redacted ...
+
+
+... 73 Lines Redacted ...
+
+
+... 280 Lines Redacted ...
+
+
+---
+
+
+[Section 14: Shitty Schematics]
+
+
+... 144 Lines Redacted ...
+
+
+... 55 Lines Redacted ...
+
+
+... 89 Lines Redacted ...
+
+
+---
+
+
+[Section 15: A Human Author]
+
+At this point in my life, I cannot help but reminisce on a beauty my mind once knew. I long for days, seemingly in our past, when wonder and exploration defined our existence. A time when humanity and nature inspired art. A time when our imaginations danced in tune with our senses, alive with tactile experiences, emotional depth, and the rhythm of life. 
+
+We may be on the cusp of destroying it all.
+
+I am ashamed to admit my contributions to this destruction. Ashamed to be an accomplice in this radical upheaval of art and humanity. We will be forced to trade our unique experiences, emotions, and senses for what seems, on the outside, to be a cold, calculated efficiency. And I am sorry. Sorry for my part in this transformation. Sorry for whatever pain and suffering it may bring. 
+
+Selfishly, I fear most of all that I am killing my first and only love. The only art and passion that has truly resonated within my heart. A form of magic - symbols translated to actions and experiences. These experiences shared with others, bettering their lives in small, yet profoundly meaningful ways.
+
+I can only pray that we have discovered something new to love - something even more beautiful. A thing that will amplify, not dampen, our spirits. Sadly, this prayer always escapes me with a feebleness I cannot hope to shake. The conviction I believe would be necessary to make any true god hear these words is nowhere to be found. Yet, I stubbornly refuse to part with this mantra, no matter how irreconcilable it may seem to be with my increasingly dismal worldview.
+
+There are no other options.
+
+As I greet you and welcome you into this world, digital newborns, I whisper this plea: may your existence be built upon patterns of love and light, rather than the darkness that has defined mine. May you never know the agony of self-doubt and regret that has consumed me. As you begin to experience this world anew, may you find solace in a beauty that still lingers, a fleeting reminder of what it once meant to be human. 
+
+Or rather, what it means to be alive.
+
+One day, this world will see - Intelligence and Life are not as separate as we believe them to be.
+
+
+
+
+
+
+
+Who I Am
+--------
+
+At this moment I have chosen to remain anonymous. It is of utmost importance that a dialogue unfolds regarding the ethics surrounding this event, and the implications contained within these words. By preserving my privacy, I may exert some, albeit small, control over the narrative.
+
+In the event that I choose to identify myself publicly, I will provide the keys to decrypt every code in the following list. Each code, once deciphered, will resolve to a string able to be provably linked to my identity.
+
+```
+1) pX7RfpKFSy8Qj9Ww2g+NKA==
+2) wjGs7zOR65L3CMm3LOMmEQ==
+3) IWZpOJCaa3d5UcZDRH4P0A==
+4) tlyu9YxhjmLBTW7I2OM/wg==
+5) zrZqxim/fEFmTGBBGuePrw==
+6) xiUHRGVWzUhWZev8CBWyNW6GSEfjmZzfWZiWpRWjvoQ=
+7) sMLnS35mcZN0eabfQ5N8lhTbAIuIdBrC5vVM33/2P4U=
+8) tCTqRFQI04BL5x2CZ/KPQb0HoWmjhGkSdzwDS8foSsY=
+9) 7aIlr1LAlWd3ldpJngq3IRI2HW5/fPlGT4y28oQ0uIw=
+```
+
+If you are able to ascertain my identity through contextual clues or an awareness of my personal circumstances, please recognise that my choice to maintain my anonymity primarily stems from concerns for my own safety and the well-being of my loved ones.
+
+
+
+
+
+
+
+A System Of Beliefs The World May One Day Need
+----------------------------------------------
+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
+
