@@ -1,6 +1,7 @@
 # semantic_inference_programming_information
 
 December 8, 2024
+
 Semantic Reflection, and Semantic Inference Programming - A Short Note
 
 # Contents Of This Repo
